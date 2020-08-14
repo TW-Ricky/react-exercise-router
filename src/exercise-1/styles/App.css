@@ -1,0 +1,29 @@
+.app {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a7a7a7;
+    padding: 0px;
+    margin: 100px;
+}
+.header {
+    text-align: right;
+    height: 50px;
+    margin: 0;
+    background-color: #cccccc;
+}
+.header ul {
+    margin: 0px;
+    list-style-type:none;
+}
+
+.header ul li {
+    margin: 10px 20px;
+    display:inline-block;
+
+}
+.header ul li a {
+    text-decoration: none;
+}
+.text-area {
+    padding: 30px;
+}
