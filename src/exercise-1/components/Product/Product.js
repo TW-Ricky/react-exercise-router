@@ -8,7 +8,6 @@ const getById = (id) => {
 class Product extends React.Component {
     
     render() {
-        
         const productid = Number(this.props.match.params.id);
         const location = this.props.location;
         const { id, name, price, quantity, desc} = getById(productid);
