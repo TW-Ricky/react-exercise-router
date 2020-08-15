@@ -5,6 +5,7 @@ import Home from './Home';
 import MyProfile from './MyProfile';
 import AboutUs from './AboutUs';
 import Products from './Products';
+import Product from './Product/Product';
 
 class App extends Component {
   state = {
@@ -33,7 +34,8 @@ class App extends Component {
           <div className = 'text-area'>
             <Switch>
               <Route exact path = "/" component = {Home}></Route>
-              <Route path = "/products" component = {Products}></Route>
+              <Route exact path = "/products" component = {Products}></Route>
+              <Route exact path = "/products/:id" component = {Product}/>;
               <Route path = "/my-profile" component = {MyProfile}></Route>
               <Route path = "/about-us" component = {AboutUs}></Route>
             </Switch>
