@@ -34,10 +34,11 @@ class App extends Component {
           <div className = 'text-area'>
             <Switch>
               <Route exact path = "/" component = {Home}></Route>
-              <Route exact path = "/products" component = {Products}></Route>
-              <Route exact path = "/products/:id" component = {Product}/>;
+              <Route exact path = "/:path(goods|products)" component = {Products}></Route>
+              <Route exact path = "/:path(goods|products)/:id" component = {Product}/>;
               <Route path = "/my-profile" component = {MyProfile}></Route>
               <Route path = "/about-us" component = {AboutUs}></Route>
+              <Route path = "*" component = {Home}></Route>
             </Switch>
           </div>
           
